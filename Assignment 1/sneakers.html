@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <header>
+        <h1>Welcome to Sneaker Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="sneakers.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section id="home">
+        <h2>Featured Sneakers</h2>
+        <div class="sneaker-gallery">
+            <div class="sneaker-item">
+                <img src="wengang-zhai-_fOL6ebfECQ-unsplash.jpg"image width="98" alt="Sneaker 1">
+                <p>AIR JORDAN 1</p>
+            </div>
+            <div class="sneaker-item">
+                <img src="ryan-plomp-PGTO_A0eLt4-unsplash (1).jpg"
+                img height="34" width="89" alt="Sneaker 2">
+                <p>AIR FORCE</p>
+            </div>
+            <div class="sneaker-item">
+                <img src="taylor-smith-aDZ5YIuedQg-unsplash.jpg" img height="54" width="92" alt="Sneaker 3">
+                <p>LIBERTY SERIES 9</p>
+            </div>
+            <div class="sneaker-item">
+                <img src="warren-jones-LFlVuWLjYEo-unsplash.jpg" img height="84" width="94" alt="Sneaker 4"> 
+                <p>AIR MAX 7</p>
+            </div>
+            <div class="sneaker-item">
+                <img src="artem-bondarchuk-XPBYi4K8vFI-unsplash.jpg"img height="85" width="95"   alt="Sneaker 5">
+                <p>NIKE 601</p>
+            </div>
+            <div class="sneaker-item">
+                <img src="jeff-tumale-SD9Jyl1xNQ4-unsplash (1).jpg"img height="96" width="98" alt="Sneaker 6">
+                <p> AIR 2</p>
+            </div>
+            <div class="sneaker-item">
+                <img src="danilo-capece-NoVnXXmDNi0-unsplash.jpg" img height="99" width="98" alt="Sneaker 7">
+                <p>AMIIRI MA-1</p>
+            </div>
+            <div class="sneaker-item">
+                <img src="branislav-belko-lJ7iAZxplpc-unsplash.jpg" img height="100" width="99" alt="Sneaker 8">
+                <p>MEN's AIR 2</p>
+            </div>
+            <div class="sneaker-item">
+                <img src="sebastien-chiron-1LFXMyrFRNw-unsplash.jpg" img height="100" width="102" alt="Sneaker 9">
+                <p>RED THUNDER </p>
+            </div>
+            <div class="sneaker-item">
+                <img src="maksim-larin-1vy2QcZd5FU-unsplash.jpg" img height="101" width="102" alt="Sneaker 10">
+                <p>PUMA SERIES 1</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Listing Page -->
+    <section id="My products">
+        <h2>All Sneakers</h2>
+        <!-- Repeat sneaker items as needed -->
+    </section>
+
+    <!-- Shopping Cart -->
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <p>Your cart is currently empty.</p>
+    </section>
+
+    <!-- User Account Dashboard -->
+    <section id="account">
+        <h2>Your Account</h2>
+        <p>Manage your account details and view your purchase history.</p>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact">
+        <h2>Contact us on email: abhishek0153@gmail.com </h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="Adress with postal code">Adress with postal code:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sneaker Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .sneaker-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .sneaker-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+            width: calc(20% - 2rem);
+            box-sizing: border-box;
+        }
+        .sneaker-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+            
+        <h2></h2>
+        <div class="sneaker-gallery">
+            <div class="sneaker-item">
+                <img src="skyler-smith-RsooE37GVw0-unsplash.jpg"img height="110" width="99" alt="Sneaker 1">
+                <p>Sneaker 1</p>
+            </div>
+            <!-- Repeat sneaker items as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sneaker Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
